@@ -10,16 +10,17 @@
 */
 
 // incloud file style.css and create attribute to tag style
+/*
 document.getElementsByTagName('html')[0].firstChild.appendChild(document.createElement('link'));
 document.getElementsByTagName('head')[0].children[2].setAttribute('rel', 'stylesheet');
 document.getElementsByTagName('head')[0].children[2].setAttribute('href', '../css/style.css');
-
+*/
 // create tag style
 document.getElementsByTagName('html')[0].firstChild.appendChild(document.createElement('style'));
 
 // create at attribute to tag style
 document.getElementsByTagName('style')[0].textContent =
-    '* {box-sizing: border-box} @font-face {font-family: Raleway-Regular; src: url(../font/Raleway-Regular.ttf);} .container{width: 80%; margin: 0 auto;} #ul-x li:hover a {color: #00a8f9!important;} .active-x{color: #00a8f9!important;} .scrollTop:hover{bottom: 35px!important}';
+    '* {box-sizing: border-box} @font-face {font-family: Raleway-Regular; src: url(font/Raleway-Regular.ttf);} .container{width: 80%; margin: 0 auto;} #ul-x li:hover a {color: #00a8f9!important;} .active-x{color: #00a8f9!important;} .scrollTop:hover{bottom: 35px!important}';
 // body
 document.body.setAttribute('id', 'body-x');
 
@@ -88,7 +89,7 @@ document.querySelector('.team div').setAttribute('class', 'container team-list')
 // team-list > div 1
 document.querySelector('.team .team-list').append(document.createElement('div'));
 document.querySelector('.team-list div:nth-of-type(1)').appendChild(document.createElement('img'));
-document.querySelector('.team-list div:nth-of-type(1) img').setAttribute('src', '../img/Warstwab.png');
+document.querySelector('.team-list div:nth-of-type(1) img').setAttribute('src', 'img/Warstwab.png');
 document.querySelector('.team-list div:nth-of-type(1)').appendChild(document.createElement('h2'));
 document.querySelector('.team-list div:nth-of-type(1) h2').textContent = 'Harvey Rube';
 
@@ -114,7 +115,7 @@ document.querySelector('.team-list div:nth-of-type(1) p').textContent = 'Nemo En
 // team-list > div 2
 document.querySelector('.team .team-list').append(document.createElement('div'));
 document.querySelector('.team-list div:nth-child(2)').appendChild(document.createElement('img'));
-document.querySelector('.team-list div:nth-child(2) img').setAttribute('src', '../img/Warstwac.png');
+document.querySelector('.team-list div:nth-child(2) img').setAttribute('src', 'img/Warstwac.png');
 document.querySelector('.team-list div:nth-child(2)').appendChild(document.createElement('h2'));
 document.querySelector('.team-list div:nth-child(2) h2').textContent = 'Janet Pris';
 
@@ -140,7 +141,7 @@ document.querySelector('.team-list div:nth-child(2) p').textContent = 'Nemo Enim
 // team-list > div 3
 document.querySelector('.team .team-list').append(document.createElement('div'));
 document.querySelector('.team-list div:nth-child(3)').appendChild(document.createElement('img'));
-document.querySelector('.team-list div:nth-child(3) img').setAttribute('src', '../img/Warstwad.png');
+document.querySelector('.team-list div:nth-child(3) img').setAttribute('src', 'img/Warstwad.png');
 document.querySelector('.team-list div:nth-child(3)').appendChild(document.createElement('h2'));
 document.querySelector('.team-list div:nth-child(3) h2').textContent = 'Kevin Ward';
 
@@ -179,7 +180,7 @@ document.body.children[3].firstChild.setAttribute('class', 'about');
 // body > div 4 > div.classname(about) > div 1
 document.getElementsByClassName('about')[0].appendChild(document.createElement('div'));
 document.querySelector('.about div:nth-child(1)').append(document.createElement('img'));
-document.querySelector('.about div:nth-child(1) img').setAttribute('src', '../img/Backgroundte.jpg');
+document.querySelector('.about div:nth-child(1) img').setAttribute('src', 'img/Backgroundte.jpg');
 
 // body > div 4 > div.classname(about) > div 2
 document.getElementsByClassName('about')[0].appendChild(document.createElement('div'));
@@ -337,7 +338,7 @@ document.querySelector('#ul-x li:nth-child(4) a').style.textDecoration = 'none';
 
 // style body > header ------------------------------------------------------------
 // style body > header
-document.querySelector('header').style.backgroundImage = 'url(../img/Background6.png)';
+document.querySelector('header').style.background = 'URL(img/Background.png)';
 document.querySelector('header').style.backgroundSize = 'cover';
 
 // style body > header > div
@@ -516,7 +517,7 @@ document.querySelector('.about div:nth-child(2) p:nth-child(3)').style.lineHeigh
 document.querySelector('.about div:nth-child(2) p:nth-child(3)').style.textAlign = 'justify';
 
 // style body > footer ------------------------------------------------------------
-document.getElementsByTagName('footer')[0].style.backgroundImage = 'url(../img/footer.jpg)';
+document.getElementsByTagName('footer')[0].style.backgroundImage = 'url(img/footer.jpg)';
 document.getElementsByTagName('footer')[0].style.backgroundSize = 'cover';
 document.getElementsByTagName('footer')[0].style.marginTop = '10%';
 
